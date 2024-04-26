@@ -1,0 +1,13 @@
+Sub LoopThroughRange()
+    Dim rng As Range
+    Dim cell As Range
+    
+    ' Define your range here, for example:
+    Set rng = ThisWorkbook.Sheets("Sheet1").Range("A1:A10")
+    
+    ' Loop through each cell in the range
+    For Each cell In rng
+        ' Do something with each cell, for example:
+        MsgBox cell.Value
+        
+        ' Check if the current cell is the last cell in the range
